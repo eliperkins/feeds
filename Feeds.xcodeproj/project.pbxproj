@@ -159,6 +159,7 @@
 		01F616F313AEAA2700EBB24E /* PreferencesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F616F113AEAA2600EBB24E /* PreferencesController.xib */; };
 		01F64A2B14C2318B00AAABD7 /* BeanstalkAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F64A2A14C2318B00AAABD7 /* BeanstalkAccount.m */; };
 		01F7120714F9551700A32AB9 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F7120614F9498000A32AB9 /* NSDate+TimeAgo.m */; };
+		2D3F7EC1173BF9030033B0BD /* AsanaAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F7EC0173BF9030033B0BD /* AsanaAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -382,6 +383,8 @@
 		01F64A2A14C2318B00AAABD7 /* BeanstalkAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BeanstalkAccount.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		01F7120514F9498000A32AB9 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
 		01F7120614F9498000A32AB9 /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		2D3F7EBF173BF9030033B0BD /* AsanaAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsanaAccount.h; sourceTree = "<group>"; };
+		2D3F7EC0173BF9030033B0BD /* AsanaAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsanaAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +435,8 @@
 				01BD35E1154D985200170BDD /* ZendeskAccount.m */,
 				01F2ABB415E176D400AE57F0 /* PivotalTrackerAccount.h */,
 				01F2ABB515E176D500AE57F0 /* PivotalTrackerAccount.m */,
+				2D3F7EBF173BF9030033B0BD /* AsanaAccount.h */,
+				2D3F7EC0173BF9030033B0BD /* AsanaAccount.m */,
 			);
 			name = Accounts;
 			sourceTree = "<group>";
@@ -975,6 +980,7 @@
 				01F2ABB615E176D500AE57F0 /* PivotalTrackerAccount.m in Sources */,
 				013B1AA815E703F3008E9ACB /* NSDate+InternetDateTime.m in Sources */,
 				01A93AAE1652B36A00B96B79 /* NSString+EmailValidation.m in Sources */,
+				2D3F7EC1173BF9030033B0BD /* AsanaAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,7 +1057,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1074,7 +1080,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
