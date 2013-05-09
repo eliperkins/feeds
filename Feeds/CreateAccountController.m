@@ -5,6 +5,7 @@
 #import "GithubAccount.h"
 #import "UserVoiceAccount.h"
 #import "TrelloAccount.h"
+#import "AsanaAccount.h"
 
 @interface CreateAccountController () <NSTextFieldDelegate, AccountDelegate>
 @property (nonatomic, strong) IBOutlet NSPopUpButton *accountTypeButton;
