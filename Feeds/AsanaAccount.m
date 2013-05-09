@@ -10,7 +10,7 @@
 
 #define ASANA_OAUTH_KEY @"5383804526414"
 #define ASANA_OAUTH_SECRET @"39965bc5a02d371874e3de43e722efa5"
-#define ASANA_REDIRECT @"feedsapp%3A%2F%2Fbasana%2Fauth"
+#define ASANA_REDIRECT @"http%3A%2F%2Ffrozen-forest-2069.herokuapp.com%2Fauth"
 
 @implementation AsanaAccount
 
@@ -29,10 +29,6 @@
 
 - (void)authWasFinishedWithURL:(NSURL *)url {
     DDLogInfo(@"GOT URL: %@", url);
-    
-    // We could get:
-    // feedsapp://basecampnext/auth?code=b1233f3e
-    // feedsapp://basecampnext/auth?error=access_denied
     
     NSString *query = [url query]; // code=xyz
     
